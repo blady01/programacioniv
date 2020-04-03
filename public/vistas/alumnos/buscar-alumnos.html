@@ -12,7 +12,8 @@
                 <thead>
                     <tr>
                         <th colspan="5">
-                            <input type="text" id="txtBuscarAlumno" placeholder="codigo o nombre" class="form-control">
+                            <input type="text" v-model="valor" v-on:keyup="buscarAlumno" placeholder="codigo o nombre o direccion"
+                                class="form-control">
                         </th>
                     </tr>
                     <tr>
@@ -24,9 +25,21 @@
                     </tr>
                 </thead>
                 <tbody>
-                    
+                    <tr v-for="estudiante in misalumnos" :key="estudiante.idAlumno"
+                        >
+                        <td v-on:click="modificarAlumno(estudiante)">{{ estudiante.codigo }}</td>
+                        <td v-on:click="modificarAlumno(estudiante)">{{ estudiante.nombre }}</td>
+                        <td v-on:click="modificarAlumno(estudiante)">{{ estudiante.direccion }}</td>
+                        <td v-on:click="modificarAlumno(estudiante)">{{ estudiante.telefono }}</td>
+
+                        <td>
+                            <input v-on:click="eliminarAlumno(estudiante.idAlumno)" type="button"
+                                class="btn btn-outline-danger text-white" value="del">
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>
     </div>
 </form>
+<script src="public/vistas/alumnos/buscar-alumnos.js"></script>
