@@ -1,55 +1,97 @@
-<!DOCTYPE html>
-<html> 
-  <head>
-    <meta charset="utf-8">
-    <title>Login Form Design One | Fazt</title>
-     <link rel="stylesheet" href="/css/master.css">
-     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">   
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<title>Formularios</title>
+</head>
+<body>
+	<div class="contenedor-formulario">
+		<div class="wrap">
+			<form action="" class="formulario" name="formulario_registro" method="get">
+				<div>
+					<div class="input-group">
+						<input type="text" id="nombre" name="nombre">
+						<label class="label" for="nombre">Nombre:</label>
+					</div>
+					<div class="input-group">
+						<input type="email" id="correo" name="correo">
+						<label class="label" for="correo">Correo:</label>
+					</div>
+					<div class="input-group">
+						<input type="password" id="pass" name="pass">
+						<label class="label" for="pass">Contraseña:</label>
+					</div>
+					<div class="input-group">
+						<input type="password" id="pass2" name="pass2">
+						<label class="label" for="pass2">Repetir Contraseña:</label>
+					</div>
+					<div class="input-group radio">
+						<input type="radio" name="sexo" id="hombre" value="Hombre">
+						<label for="hombre">Hombre</label>
+						<input type="radio" name="sexo" id="mujer" value="Mujer">
+						<label for="mujer">Mujer</label>
+					</div>
+					<div class="input-group checkbox">
+						<input type="checkbox" name="terminos" id="terminos" value="true">
+						<label for="terminos">Acepto los Terminos y Condiciones</label>
+					</div>
+						
+					<input type="submit" id="btn-submit" value="Enviar">
+				</div>
+			</form>
+		</div>
+	</div>
 
-  </head>
+	<script src="js/formulario.js"></script>
+</body>
+</html><html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<title>Formularios</title>
+</head>
+<body>
+	<div class="contenedor-formulario">
+		<div class="wrap">
+			<form action="" class="formulario" name="formulario_registro" method="get">
+				<div>
+					<div class="input-group">
+						<input type="text" id="nombre" name="nombre">
+						<label class="label" for="nombre">Nombre:</label>
+					</div>
+					<div class="input-group">
+						<input type="email" id="correo" name="correo">
+						<label class="label" for="correo">Correo:</label>
+					</div>
+					<div class="input-group">
+						<input type="password" id="pass" name="pass">
+						<label class="label" for="pass">Contraseña:</label>
+					</div>
+					<div class="input-group">
+						<input type="password" id="pass2" name="pass2">
+						<label class="label" for="pass2">Repetir Contraseña:</label>
+					</div>
+					<div class="input-group radio">
+						<input type="radio" name="sexo" id="hombre" value="Hombre">
+						<label for="hombre">Hombre</label>
+						<input type="radio" name="sexo" id="mujer" value="Mujer">
+						<label for="mujer">Mujer</label>
+					</div>
+					<div class="input-group checkbox">
+						<input type="checkbox" name="terminos" id="terminos" value="true">
+						<label for="terminos">Acepto los Terminos y Condiciones</label>
+					</div>
+						
+					<input type="submit" id="btn-submit" value="Enviar">
+				</div>
+			</form>
+		</div>
+	</div>
 
-
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Usu empleo </a> </li> 
-          <li><a href="#"><i class="fa fa-eye-slash" aria-hidden="true"></i> Ver Puestos </a></li>
-          <li><a href="#"><i class="fa fa-eye-slash" aria-hidden="true"></i> Ver empresas</a></li>
-          <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Empresa</a></li>
-          <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i> Oferente</a></li>
-          <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Inicio de sesión </a></li>
-          <li><a href="#"><i class="fa fa-info" aria-hidden="true"></i> Acerca de</a></li>
-        </ul>
-      </nav>
-    </header>
-    
-    
-  
-    <div class="login-box">
-      <img src="img/logo.png" class="avatar" alt="Avatar Image">
-      <h1>Iniciar sesión</h1>
-      <form>
-        <!-- opcion INPUT -->
-        <label for="Iniciar sesión como:">Iniciar sesión como:</label>
-        <select name="opcion">
-          <option value="1">Oferente</option> 
-          <option value="2">Empresa</option> 
-          
-       </select>
-       
-        <!-- USERNAME INPUT -->
-        <label for="Correo"><i class="fa fa-envelope" aria-hidden="true"></i> Correo</label>
-        <input type="text" placeholder="Enter Correo">
-        <!-- PASSWORD INPUT -->
-        <label for="password"><i class="fa fa-unlock-alt" aria-hidden="true"></i>  Password</label>
-        <input type="password" placeholder="Enter Password">
-        <input type="submit" value="Entrar">
-        
-        
-      </form>
-    </div>
-    
-    <script src="https://kit.fontawesome.com/2f2a4cd560.js" crossorigin="anonymous"></script>   
-  </body>
+	<script src="js/formulario.js"></script>
+</body>
 </html>
